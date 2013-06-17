@@ -39184,3 +39184,700 @@ Served asset /questions.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 22:08:25 -0430
 Served asset /application.js - 304 Not Modified (5ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2013-06-17 15:40:37 -0430
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCommentQ Load (0.2ms)[0m  [1mSELECT "comment_qs".* FROM "comment_qs" WHERE "comment_qs"."question_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered questions/show.html.erb within layouts/application (283.4ms)
+  Rendered layouts/_navigation.html.erb (3.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 762ms (Views: 744.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:37 -0430
+Served asset /application.css - 304 Not Modified (128ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin.css - 304 Not Modified (85ms)
+
+
+Started GET "/assets/active_admin_ex.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin_ex.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comment_qs.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /comment_qs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /answers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /questions.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-alert.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-button.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-tooltip.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /bootstrap.js - 304 Not Modified (108ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/lib/namespace.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/components/jquery.aa.popover.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/pages/batch_actions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/pages/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin/base.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /active_admin.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/comment_qs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /comment_qs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /answers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /questions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:38 -0430
+Served asset /application.js - 304 Not Modified (55ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 238ms (Views: 236.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /application.css - 304 Not Modified (74ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin_ex.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin_ex.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment_qs.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /comment_qs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /answers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /questions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-button.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/lib/namespace.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/components/jquery.aa.popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/pages/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/pages/batch_actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /active_admin/base.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/comment_qs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /comment_qs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:41 -0430
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-06-17 15:40:42 -0430
+Served asset /glyphicons-halflings.png - 304 Not Modified (2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-06-17 15:40:44 -0430
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT "questions".* FROM "questions" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered questions/index.html.erb within layouts/application (73.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (2.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 314ms (Views: 310.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:44 -0430
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin.css - 304 Not Modified (85ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /questions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin_ex.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin_ex.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment_qs.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /comment_qs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/lib/namespace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/components/jquery.aa.popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/pages/application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /active_admin/pages/batch_actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment_qs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /comment_qs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /home.js - 304 Not Modified (81ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:45 -0430
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCommentQ Load (0.2ms)[0m  SELECT "comment_qs".* FROM "comment_qs" WHERE "comment_qs"."question_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered questions/show.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 254ms (Views: 250.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /active_admin.css - 304 Not Modified (86ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comment_qs.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /comment_qs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin_ex.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /active_admin_ex.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:46 -0430
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/lib/namespace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/pages/application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/components/jquery.aa.popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/pages/batch_actions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/application.js - 304 Not Modified (98ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin/base.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /active_admin.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /answers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comment_qs.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /comment_qs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-17 15:40:47 -0430
+Served asset /application.js - 304 Not Modified (5ms)
