@@ -1,0 +1,59 @@
+<!--<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @question.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @question.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>-->
+
+<h1> <%= @question.title %></h1>
+<p>
+<%= @question.body %>
+</p>
+<p>
+  Creada por <%= @question.user.username%>
+</p>
+
+<h4> Comentarios </h4>
+
+<% @question.comment_qs.each do |comment_q| %>
+  <p> <%=  comment_q.text %></p>
+  <p>  Comentado por <%= comment_q.user.username%> hace <%=  time_ago_in_words comment_q.created_at %></p>
+  <p> <%=  link_to 'Borrar comentario', [@question, comment_q], :method => :delete, :confirm => "¿Estás seguro?"%></p>
+<% end %>
+
+<%=  form_for [@question, @question.comment_qs.build] do |f| %>
+  <p> <%=  f.text_area :text, :size => '40x5'  %></p>
+  <p> <%=  f.submit "Publicar comentario"  %></p>
+<% end %>
+
+<h2> Respuestas </h2>
+
+<% @question.answers.each do |answer| %>
+  <p> <%=  answer.body %></p>
+  <p>  Respondido por <%= answer.user.username%> hace <%=  time_ago_in_words answer.created_at %></p>
+  <p> <%=  link_to 'Borrar Pregunta', [@question, answer], :method => :delete, :confirm => "¿Estás seguro?"%></p>
+<% end %>
+
+<%=  form_for [@question, @question.answers.build] do |f| %>
+  <p> <%=  f.text_area :body, :size => '40x15'  %></p>
+  <p> <%=  f.submit "Publica tu Respuesta"  %></p>
+<% end %>
+
+<p>
+<%= link_to 'Atrás', questions_path %>|
+<%= if (@question.user == current_user) 
+      link_to 'Editar', edit_question_path(@question)
+     end %>|
+<%= if (@question.user == current_user)
+      link_to 'Borrar', @question, :method => :delete, :confirm => "¿Estás seguro?"
+    end %>
+</p>
