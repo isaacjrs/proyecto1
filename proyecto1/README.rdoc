@@ -1,0 +1,20 @@
+== HazTuPregunta.com
+
+== Instalacion
+
+1. Copia el repositorio a tu maquina:
+       Git clone https://github.com/murilloarturo/HazTuPregunta.git 
+
+2. Cambia al directorio del proyecto:
+       cd HazTuPregunta 
+
+
+2. Instala las gemas necesarias:
+       bundle install 
+
+3. Migrar la Base de Datos.:
+       rake db:migrate
+
+
+4. Arranca el servidor de pruebas. (http://localhost:3000/):
+       rails s
